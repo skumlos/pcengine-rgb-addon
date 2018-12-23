@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name pcengine-expansion)(type KiCad)(uri "$(KIPRJMOD)/pcengine-expansion.pretty")(options "")(descr ""))
+  (lib (name mini-din)(type KiCad)(uri "$(KIPRJMOD)/mini-din.pretty")(options "")(descr ""))
+)

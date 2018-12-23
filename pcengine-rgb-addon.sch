@@ -1,0 +1,802 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mini-din-9-pin
+LIBS:pcengineexpansion
+LIBS:ths7374
+LIBS:ts922a
+LIBS:pcengine-rgb-addon-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mini-DIN-9-Pin U3
+U 1 1 5B8ECE57
+P 4350 2000
+F 0 "U3" H 4350 2600 60  0000 C CNN
+F 1 "Mini-DIN-9-Pin" H 4350 1600 60  0000 C CNN
+F 2 "mini-din:MINI-DIN-9PIN" H 4150 2000 60  0001 C CNN
+F 3 "" H 4150 2000 60  0001 C CNN
+F 4 "tme.eu" H 4350 2000 60  0001 C CNN "Supplier"
+F 5 "MDC-209" H 4350 2000 60  0001 C CNN "Part number"
+	1    4350 2000
+	1    0    0    -1  
+$EndComp
+Text Label 5000 1700 0    60   ~ 0
+Red
+Text Label 5050 1900 0    60   ~ 0
+Green
+Text Label 4800 2300 0    60   ~ 0
+Blue
+Text Label 3750 2100 2    60   ~ 0
+Sync
+Text Label 3950 6450 0    60   ~ 0
+AudioLeft
+Text Label 3650 1900 2    60   ~ 0
+Audio_Mono
+$Comp
+L PCEngineExpansion U1
+U 1 1 5B8EF83D
+P 3750 5700
+F 0 "U1" H 3350 6450 60  0000 C CNN
+F 1 "PCEngineExpansion" V 2850 5700 60  0000 C CNN
+F 2 "pcengine-expansion:PCEngineExpansion" H 3750 5700 60  0001 C CNN
+F 3 "" H 3750 5700 60  0001 C CNN
+F 4 "Samtec" H 3750 5700 60  0001 C CNN "Supplier"
+F 5 "SSQ-123-02-T-T-RA" H 3750 5700 60  0001 C CNN "Partnumber"
+	1    3750 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCEngineExpansion U1
+U 2 1 5B8EF8C2
+P 1900 5700
+F 0 "U1" H 1500 6450 60  0000 C CNN
+F 1 "PCEngineExpansion" V 1000 5700 60  0000 C CNN
+F 2 "pcengine-expansion:PCEngineExpansion" H 1900 5700 60  0001 C CNN
+F 3 "" H 1900 5700 60  0001 C CNN
+	2    1900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L THS7374 U2
+U 1 1 5B8EFB9D
+P 4100 3550
+F 0 "U2" H 3750 4200 60  0000 C CNN
+F 1 "THS7374" H 4300 2950 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 3900 3900 60  0001 C CNN
+F 3 "" H 3900 3900 60  0001 C CNN
+F 4 "Mouser.com" H 4100 3550 60  0001 C CNN "Supplier"
+F 5 "THS7374IPWR" H 4100 3550 60  0001 C CNN "Partnumber"
+	1    4100 3550
+	1    0    0    -1  
+$EndComp
+Text Label 4700 3050 0    60   ~ 0
+Red
+Text Label 4700 3200 0    60   ~ 0
+Green
+Text Label 4700 3350 0    60   ~ 0
+Blue
+$Comp
+L C C1
+U 1 1 5B8EFC82
+P 2650 3050
+F 0 "C1" V 2700 3100 50  0000 L CNN
+F 1 "0.1uF" V 2500 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2688 2900 50  0001 C CNN
+F 3 "" H 2650 3050 50  0001 C CNN
+	1    2650 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5B8EFD09
+P 2950 3200
+F 0 "C2" V 3000 3250 50  0000 L CNN
+F 1 "0.1uF" V 2800 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2988 3050 50  0001 C CNN
+F 3 "" H 2950 3200 50  0001 C CNN
+	1    2950 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 5B8EFD55
+P 3250 3350
+F 0 "C3" V 3300 3400 50  0000 L CNN
+F 1 "0.1uF" V 3100 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3288 3200 50  0001 C CNN
+F 3 "" H 3250 3350 50  0001 C CNN
+	1    3250 3350
+	0    1    1    0   
+$EndComp
+Text Label 2200 5100 0    60   ~ 0
+Vout
+Text Label 2200 5400 0    60   ~ 0
+GNDa
+Wire Wire Line
+	2100 5550 2200 5550
+Wire Wire Line
+	2200 5550 2200 5400
+Wire Wire Line
+	2200 5400 2100 5400
+Wire Wire Line
+	2100 5250 2200 5250
+Wire Wire Line
+	2200 5250 2200 5100
+Wire Wire Line
+	2200 5100 2100 5100
+Text Label 4400 5550 0    60   ~ 0
+Sync
+NoConn ~ 2100 6450
+NoConn ~ 2100 6300
+NoConn ~ 2100 6050
+NoConn ~ 2100 5900
+NoConn ~ 2100 5750
+$Comp
+L R R1
+U 1 1 5B8F0295
+P 5250 3850
+F 0 "R1" V 5330 3850 50  0000 C CNN
+F 1 "10K" V 5250 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5180 3850 50  0001 C CNN
+F 3 "" H 5250 3850 50  0001 C CNN
+	1    5250 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02_Male J1
+U 1 1 5B8F0325
+P 5350 4250
+F 0 "J1" H 5350 4350 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 5350 4050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5350 4250 50  0001 C CNN
+F 3 "" H 5350 4250 50  0001 C CNN
+	1    5350 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 3850 5100 3850
+Wire Wire Line
+	5150 4150 4900 4150
+Wire Wire Line
+	4900 4150 4900 3850
+Connection ~ 4900 3850
+Text Label 5150 4250 2    60   ~ 0
+GNDa
+NoConn ~ 3950 6150
+Wire Wire Line
+	2800 3050 3500 3050
+Wire Wire Line
+	3100 3200 3500 3200
+Wire Wire Line
+	3400 3350 3500 3350
+Wire Wire Line
+	2800 3200 2500 3200
+Wire Wire Line
+	3100 3350 2500 3350
+Text Label 2500 3350 2    60   ~ 0
+Blue_raw
+Text Label 2500 3200 2    60   ~ 0
+Green_raw
+Text Label 2500 3050 2    60   ~ 0
+Red_raw
+Text Label 3950 5100 0    60   ~ 0
+Red_raw
+Text Label 3950 5250 0    60   ~ 0
+Green_raw
+Text Label 3950 5400 0    60   ~ 0
+Blue_raw
+Text Label 2500 3500 2    60   ~ 0
+Video_raw
+Text Label 3950 5800 0    60   ~ 0
+Video_raw
+$Comp
+L C C4
+U 1 1 5B903C2D
+P 2950 3500
+F 0 "C4" V 3000 3550 50  0000 L CNN
+F 1 "0.1uF" V 2800 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2988 3350 50  0001 C CNN
+F 3 "" H 2950 3500 50  0001 C CNN
+	1    2950 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 3500 3500 3500
+Wire Wire Line
+	2800 3500 2500 3500
+Text Label 4950 2100 0    60   ~ 0
+Video
+$Comp
+L GNDA #PWR01
+U 1 1 5B9042C7
+P 1400 4350
+F 0 "#PWR01" H 1400 4100 50  0001 C CNN
+F 1 "GNDA" H 1400 4200 50  0000 C CNN
+F 2 "" H 1400 4350 50  0001 C CNN
+F 3 "" H 1400 4350 50  0001 C CNN
+	1    1400 4350
+	1    0    0    -1  
+$EndComp
+Text Label 1400 4350 1    60   ~ 0
+GNDa
+$Comp
+L TS922A U4
+U 2 1 5B904577
+P 8850 4500
+F 0 "U4" H 8700 4850 60  0000 C CNN
+F 1 "TS922A" H 8700 4100 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8850 4500 60  0001 C CNN
+F 3 "" H 8850 4500 60  0001 C CNN
+	2    8850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5B90467E
+P 7850 4450
+F 0 "R5" V 7930 4450 50  0000 C CNN
+F 1 "10K" V 7850 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7780 4450 50  0001 C CNN
+F 3 "" H 7850 4450 50  0001 C CNN
+	1    7850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5B9046FD
+P 7850 4850
+F 0 "R6" V 7930 4850 50  0000 C CNN
+F 1 "10K" V 7850 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7780 4850 50  0001 C CNN
+F 3 "" H 7850 4850 50  0001 C CNN
+	1    7850 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR02
+U 1 1 5B904761
+P 7850 5100
+F 0 "#PWR02" H 7850 4850 50  0001 C CNN
+F 1 "GNDA" H 7850 4950 50  0000 C CNN
+F 2 "" H 7850 5100 50  0001 C CNN
+F 3 "" H 7850 5100 50  0001 C CNN
+	1    7850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5B90478E
+P 7600 4850
+F 0 "C7" H 7625 4950 50  0000 L CNN
+F 1 "2.2uF" H 7625 4750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7638 4700 50  0001 C CNN
+F 3 "" H 7600 4850 50  0001 C CNN
+	1    7600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5000 7850 5100
+Wire Wire Line
+	7850 5050 7600 5050
+Wire Wire Line
+	7600 5050 7600 5000
+Connection ~ 7850 5050
+Wire Wire Line
+	7600 4700 7600 4650
+Wire Wire Line
+	7600 4650 7900 4650
+Wire Wire Line
+	7850 4600 7850 4700
+Connection ~ 7850 4650
+$Comp
+L R R8
+U 1 1 5B904950
+P 8050 4650
+F 0 "R8" V 8130 4650 50  0000 C CNN
+F 1 "1M" V 8050 4650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 4650 50  0001 C CNN
+F 3 "" H 8050 4650 50  0001 C CNN
+	1    8050 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR03
+U 1 1 5B904B0F
+P 5050 1550
+F 0 "#PWR03" H 5050 1300 50  0001 C CNN
+F 1 "GNDA" V 5050 1350 50  0000 C CNN
+F 2 "" H 5050 1550 50  0001 C CNN
+F 3 "" H 5050 1550 50  0001 C CNN
+	1    5050 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 5B904D96
+P 1600 4250
+F 0 "#PWR04" H 1600 4100 50  0001 C CNN
+F 1 "+5V" H 1600 4390 50  0000 C CNN
+F 2 "" H 1600 4250 50  0001 C CNN
+F 3 "" H 1600 4250 50  0001 C CNN
+	1    1600 4250
+	1    0    0    -1  
+$EndComp
+Text Label 1600 4250 3    60   ~ 0
+Vout
+$Comp
+L GNDA #PWR05
+U 1 1 5B904FEE
+P 3500 3700
+F 0 "#PWR05" H 3500 3450 50  0001 C CNN
+F 1 "GNDA" V 3500 3500 50  0000 C CNN
+F 2 "" H 3500 3700 50  0001 C CNN
+F 3 "" H 3500 3700 50  0001 C CNN
+	1    3500 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR06
+U 1 1 5B90502F
+P 3500 3850
+F 0 "#PWR06" H 3500 3600 50  0001 C CNN
+F 1 "GNDA" V 3500 3650 50  0000 C CNN
+F 2 "" H 3500 3850 50  0001 C CNN
+F 3 "" H 3500 3850 50  0001 C CNN
+	1    3500 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 5B90513F
+P 5400 3850
+F 0 "#PWR07" H 5400 3700 50  0001 C CNN
+F 1 "+5V" V 5400 4050 50  0000 C CNN
+F 2 "" H 5400 3850 50  0001 C CNN
+F 3 "" H 5400 3850 50  0001 C CNN
+	1    5400 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 5B905236
+P 3900 2300
+F 0 "#PWR08" H 3900 2150 50  0001 C CNN
+F 1 "+5V" V 3900 2500 50  0000 C CNN
+F 2 "" H 3900 2300 50  0001 C CNN
+F 3 "" H 3900 2300 50  0001 C CNN
+	1    3900 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 5B90537F
+P 7850 4300
+F 0 "#PWR09" H 7850 4150 50  0001 C CNN
+F 1 "+5V" H 7850 4440 50  0000 C CNN
+F 2 "" H 7850 4300 50  0001 C CNN
+F 3 "" H 7850 4300 50  0001 C CNN
+	1    7850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 5B9053F8
+P 7850 5400
+F 0 "C9" V 7900 5500 50  0000 L CNN
+F 1 "10nF/Poly" V 8000 5200 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7888 5250 50  0001 C CNN
+F 3 "" H 7850 5400 50  0001 C CNN
+	1    7850 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 4650 8500 4650
+Wire Wire Line
+	8000 5400 8350 5400
+Wire Wire Line
+	8350 5400 8350 4650
+Connection ~ 8350 4650
+Text Label 3950 6300 0    60   ~ 0
+AudioRight
+Text Label 7700 5400 2    60   ~ 0
+AudioRight
+$Comp
+L R R12
+U 1 1 5B9057DF
+P 8950 3650
+F 0 "R12" V 9030 3650 50  0000 C CNN
+F 1 "10K" V 8950 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8880 3650 50  0001 C CNN
+F 3 "" H 8950 3650 50  0001 C CNN
+	1    8950 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 5B90585E
+P 8250 3950
+F 0 "R10" V 8330 3950 50  0000 C CNN
+F 1 "2K7" V 8250 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8180 3950 50  0001 C CNN
+F 3 "" H 8250 3950 50  0001 C CNN
+	1    8250 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L C C11
+U 1 1 5B9058CB
+P 7900 3950
+F 0 "C11" H 7925 4050 50  0000 L CNN
+F 1 "1uF" H 7925 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7938 3800 50  0001 C CNN
+F 3 "" H 7900 3950 50  0001 C CNN
+	1    7900 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR010
+U 1 1 5B9059A5
+P 7750 3950
+F 0 "#PWR010" H 7750 3700 50  0001 C CNN
+F 1 "GNDA" V 7750 3750 50  0000 C CNN
+F 2 "" H 7750 3950 50  0001 C CNN
+F 3 "" H 7750 3950 50  0001 C CNN
+	1    7750 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 3950 8100 3950
+Wire Wire Line
+	8500 4350 8450 4350
+Wire Wire Line
+	8450 4350 8450 3950
+Wire Wire Line
+	8400 3950 8650 3950
+Wire Wire Line
+	8650 3950 8650 3650
+Wire Wire Line
+	8650 3650 8800 3650
+Connection ~ 8450 3950
+Wire Wire Line
+	9100 3650 9350 3650
+Wire Wire Line
+	9350 3650 9350 4500
+Wire Wire Line
+	9300 4500 9400 4500
+$Comp
+L C C13
+U 1 1 5B905BC2
+P 9550 4500
+F 0 "C13" H 9575 4600 50  0000 L CNN
+F 1 "10uF/Poly" H 9575 4400 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 9588 4350 50  0001 C CNN
+F 3 "" H 9550 4500 50  0001 C CNN
+F 4 "tme.eu" H 9550 4500 60  0001 C CNN "Supplier"
+F 5 "UWX1V100MCL1GB" H 9550 4500 60  0001 C CNN "Partnumber"
+	1    9550 4500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9350 4500
+Text Label 9700 4500 0    60   ~ 0
+AudioRightAmp
+Text Label 3700 1700 2    60   ~ 0
+AudioRightAmp
+$Comp
+L TS922A U4
+U 1 1 5B906348
+P 8850 2000
+F 0 "U4" H 8700 2350 60  0000 C CNN
+F 1 "TS922A" H 8700 1600 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8850 2000 60  0001 C CNN
+F 3 "" H 8850 2000 60  0001 C CNN
+F 4 "Mouser.com" H 8850 2000 60  0001 C CNN "Supplier"
+F 5 "TS922AIDT" H 8850 2000 60  0001 C CNN "Partnumber"
+	1    8850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5B90634E
+P 7850 1950
+F 0 "R3" V 7930 1950 50  0000 C CNN
+F 1 "10K" V 7850 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7780 1950 50  0001 C CNN
+F 3 "" H 7850 1950 50  0001 C CNN
+	1    7850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5B906354
+P 7850 2350
+F 0 "R4" V 7930 2350 50  0000 C CNN
+F 1 "10K" V 7850 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7780 2350 50  0001 C CNN
+F 3 "" H 7850 2350 50  0001 C CNN
+	1    7850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR011
+U 1 1 5B90635A
+P 7850 2600
+F 0 "#PWR011" H 7850 2350 50  0001 C CNN
+F 1 "GNDA" H 7850 2450 50  0000 C CNN
+F 2 "" H 7850 2600 50  0001 C CNN
+F 3 "" H 7850 2600 50  0001 C CNN
+	1    7850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 5B906360
+P 7600 2350
+F 0 "C6" H 7625 2450 50  0000 L CNN
+F 1 "2.2uF" H 7625 2250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7638 2200 50  0001 C CNN
+F 3 "" H 7600 2350 50  0001 C CNN
+	1    7600 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2500 7850 2600
+Wire Wire Line
+	7850 2550 7600 2550
+Wire Wire Line
+	7600 2550 7600 2500
+Connection ~ 7850 2550
+Wire Wire Line
+	7600 2200 7600 2150
+Wire Wire Line
+	7600 2150 7900 2150
+Wire Wire Line
+	7850 2100 7850 2200
+Connection ~ 7850 2150
+$Comp
+L R R7
+U 1 1 5B90636E
+P 8050 2150
+F 0 "R7" V 8130 2150 50  0000 C CNN
+F 1 "1M" V 8050 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 2150 50  0001 C CNN
+F 3 "" H 8050 2150 50  0001 C CNN
+	1    8050 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 5B906374
+P 7850 1800
+F 0 "#PWR012" H 7850 1650 50  0001 C CNN
+F 1 "+5V" H 7850 1940 50  0000 C CNN
+F 2 "" H 7850 1800 50  0001 C CNN
+F 3 "" H 7850 1800 50  0001 C CNN
+	1    7850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 5B90637A
+P 7850 2900
+F 0 "C8" V 7900 3000 50  0000 L CNN
+F 1 "10nF/Poly" V 8000 2700 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7888 2750 50  0001 C CNN
+F 3 "" H 7850 2900 50  0001 C CNN
+	1    7850 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR013
+U 1 1 5B906380
+P 9000 1500
+F 0 "#PWR013" H 9000 1350 50  0001 C CNN
+F 1 "+5V" H 9000 1650 50  0000 C CNN
+F 2 "" H 9000 1500 50  0001 C CNN
+F 3 "" H 9000 1500 50  0001 C CNN
+	1    9000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR014
+U 1 1 5B906386
+P 9000 2500
+F 0 "#PWR014" H 9000 2250 50  0001 C CNN
+F 1 "GNDA" H 9000 2350 50  0000 C CNN
+F 2 "" H 9000 2500 50  0001 C CNN
+F 3 "" H 9000 2500 50  0001 C CNN
+	1    9000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2150 8500 2150
+Wire Wire Line
+	8000 2900 8350 2900
+Wire Wire Line
+	8350 2900 8350 2150
+Connection ~ 8350 2150
+Text Label 7700 2900 2    60   ~ 0
+AudioLeft
+$Comp
+L R R11
+U 1 1 5B906391
+P 8950 1150
+F 0 "R11" V 9030 1150 50  0000 C CNN
+F 1 "10K" V 8950 1150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8880 1150 50  0001 C CNN
+F 3 "" H 8950 1150 50  0001 C CNN
+	1    8950 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5B906397
+P 8250 1450
+F 0 "R9" V 8330 1450 50  0000 C CNN
+F 1 "2K7" V 8250 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8180 1450 50  0001 C CNN
+F 3 "" H 8250 1450 50  0001 C CNN
+	1    8250 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L C C10
+U 1 1 5B90639D
+P 7900 1450
+F 0 "C10" H 7925 1550 50  0000 L CNN
+F 1 "1uF" H 7925 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7938 1300 50  0001 C CNN
+F 3 "" H 7900 1450 50  0001 C CNN
+	1    7900 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR015
+U 1 1 5B9063A3
+P 7750 1450
+F 0 "#PWR015" H 7750 1200 50  0001 C CNN
+F 1 "GNDA" V 7750 1250 50  0000 C CNN
+F 2 "" H 7750 1450 50  0001 C CNN
+F 3 "" H 7750 1450 50  0001 C CNN
+	1    7750 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 1450 8100 1450
+Wire Wire Line
+	8500 1850 8450 1850
+Wire Wire Line
+	8450 1850 8450 1450
+Wire Wire Line
+	8400 1450 8650 1450
+Wire Wire Line
+	8650 1450 8650 1150
+Wire Wire Line
+	8650 1150 8800 1150
+Connection ~ 8450 1450
+Wire Wire Line
+	9100 1150 9350 1150
+Wire Wire Line
+	9350 1150 9350 2000
+Wire Wire Line
+	9300 2000 9400 2000
+$Comp
+L C C12
+U 1 1 5B9063B3
+P 9550 2000
+F 0 "C12" H 9575 2100 50  0000 L CNN
+F 1 "10uF/Poly" H 9575 1900 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 9588 1850 50  0001 C CNN
+F 3 "" H 9550 2000 50  0001 C CNN
+	1    9550 2000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9350 2000
+Text Label 9700 2000 0    60   ~ 0
+AudioLeftAmp
+Text Label 3800 1550 2    60   ~ 0
+AudioLeftAmp
+Text Label 4700 3500 0    60   ~ 0
+Video
+$Comp
+L +5V #PWR016
+U 1 1 5B918A83
+P 4700 3700
+F 0 "#PWR016" H 4700 3550 50  0001 C CNN
+F 1 "+5V" H 4700 3840 50  0000 C CNN
+F 2 "" H 4700 3700 50  0001 C CNN
+F 3 "" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L C C5
+U 1 1 5B918AE8
+P 4100 4400
+F 0 "C5" V 4150 4450 50  0000 L CNN
+F 1 "10uF" V 3950 4300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4138 4250 50  0001 C CNN
+F 3 "" H 4100 4400 50  0001 C CNN
+	1    4100 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR017
+U 1 1 5B918B79
+P 4250 4400
+F 0 "#PWR017" H 4250 4250 50  0001 C CNN
+F 1 "+5V" V 4250 4600 50  0000 C CNN
+F 2 "" H 4250 4400 50  0001 C CNN
+F 3 "" H 4250 4400 50  0001 C CNN
+	1    4250 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR018
+U 1 1 5B918CAC
+P 3950 4400
+F 0 "#PWR018" H 3950 4150 50  0001 C CNN
+F 1 "GNDA" V 3950 4200 50  0000 C CNN
+F 2 "" H 3950 4400 50  0001 C CNN
+F 3 "" H 3950 4400 50  0001 C CNN
+	1    3950 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5B92CFA3
+P 4200 5550
+F 0 "R2" V 4280 5550 50  0000 C CNN
+F 1 "75R/Zero" V 4200 5550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 5550 50  0001 C CNN
+F 3 "" H 4200 5550 50  0001 C CNN
+	1    4200 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 5550 4050 5550
+Wire Wire Line
+	4350 5550 4400 5550
+$EndSCHEMATC
