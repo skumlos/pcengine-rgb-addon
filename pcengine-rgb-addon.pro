@@ -1,4 +1,4 @@
-update=2018-09-05T22:46:41 CEST
+update=2019-05-23T17:58:32 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,13 @@ LibName33=mini-din-9-pin
 LibName34=pcengineexpansion
 LibName35=ths7374
 LibName36=ts922a
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

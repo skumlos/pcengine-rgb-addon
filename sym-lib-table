@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "pcengine-rgb-addon-rescue")(type "Legacy")(uri "${KIPRJMOD}/pcengine-rgb-addon-rescue.lib")(options "")(descr ""))
+  (lib (name "ts922a")(type "Legacy")(uri "${KIPRJMOD}/ts922a.lib")(options "")(descr ""))
+  (lib (name "mini-din-9-pin")(type "Legacy")(uri "${KIPRJMOD}/mini-din-9-pin.lib")(options "")(descr ""))
+  (lib (name "ths7374")(type "Legacy")(uri "${KIPRJMOD}/ths7374.lib")(options "")(descr ""))
+)
